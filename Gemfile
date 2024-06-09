@@ -67,3 +67,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'jsbundling-rails'
+gem 'vite_rails'
