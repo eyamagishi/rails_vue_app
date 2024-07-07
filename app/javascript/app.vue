@@ -1,20 +1,21 @@
+<!-- app/javascript/app.vue -->
 <template>
-    <p>{{ state.message }}</p>
+    <p>{{ message }}</p>
 </template>
-  
-<script lang="ts">
-import { defineComponent } from 'vue'
+
+<script>
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-    name: 'App',
     setup() {
+        const message = ref('Ruby on Rails + vite + Vue3!');
+
         return {
-            state: {
-                message: "Ruby on Rails + vite + Vue3!"
-            }
-        }
-    }
-})
+            message,
+        };
+    },
+});
+
 </script>
   
 <style scoped>
