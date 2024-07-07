@@ -1,24 +1,15 @@
-<!-- app/javascript/app.vue -->
 <template>
     <p>{{ message }}</p>
 </template>
 
-<script>
-import { defineComponent, ref } from "vue";
+<script setup>
+import { ref } from "vue";
 
-export default defineComponent({
-    setup() {
-        const message = ref('Ruby on Rails + vite + Vue3!');
-
-        return {
-            message,
-        };
-    },
-});
+const message = ref('Ruby on Rails + vite + Vue3!');
 
 </script>
   
-<style scoped>
+<style>
 p {
     font-size: 2em;
     text-align: center;
